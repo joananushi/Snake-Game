@@ -1,9 +1,7 @@
 from flask import Flask, render_template, jsonify
-from snake_game import SnakeGame  # Import your Snake game logic from snake_game.py
-
+from snake_game import SnakeGame  
 app = Flask(__name__)
 
-# Create an instance of the SnakeGame class
 snake_game = SnakeGame()
 
 @app.route('/')
